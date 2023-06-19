@@ -1,4 +1,4 @@
-package Chapter06;
+package Chapter06.Ex01;
 
 class Tv {
     String color;
