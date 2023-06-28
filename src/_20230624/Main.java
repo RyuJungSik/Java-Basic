@@ -20,6 +20,6 @@ public class Main {
 //        byte[] bytes = s.getBytes(StandardCharsets.UTF_8);
 //        return new ByteArrayInputStream(bytes);
 
-        return new FileInputStream("test");
+        return new FileInputStream("test2.txt");
     }
 }
