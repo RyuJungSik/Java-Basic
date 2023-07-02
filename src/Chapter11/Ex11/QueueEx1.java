@@ -1,6 +1,7 @@
 package Chapter11.Ex11;
 
 import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.Queue;
 import java.util.Scanner;
 
@@ -10,7 +11,7 @@ public class QueueEx1 {
 
     public static void main(String[] args) {
         System.out.println("help");
-        while(true){
+        while (true) {
             System.out.print(">>");
             try {
                 Scanner s = new Scanner(System.in);
@@ -30,9 +31,16 @@ public class QueueEx1 {
                     int i = 0;
                     save(input);
 
+                    LinkedList tmp = (LinkedList) q;
+                    ListIterator it = tmp.listIterator();
+                    while (it.hasNext()) {
+                        System.out.println(++i + " . " + it.next());
+                    }
+                } else {
+                    save(input);
+                    System.out.println(input);
+
                 }
-
-
             } catch (Exception e) {
                 System.out.println("입력오류");
             }
